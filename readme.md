@@ -46,7 +46,7 @@ sh queue.sh
 
 #### Everything should work smoothly and safe
 
-## Q&A:Modify imgages and other assets
+## Q&A:Customize images and other assets
 #### logo/home_logo
 ~/public/assets/images/
 #### footer
