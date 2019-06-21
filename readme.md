@@ -3,8 +3,8 @@ A set of achievement about freedom and blood.
 
 ## Installtion Tutorial
 #### 1.bt.cn
-Install the panel
-Enable **curl、gd、fileinfo、openssl** components
+Install the panel . 
+Enable **curl、gd、fileinfo、openssl** components . 
 Enable all functions which **start with 'proc_'** (from 'disable_function' configuration)
 Establish a new website, set relative configuration
 Add rewirte rules of 'Laravel'
