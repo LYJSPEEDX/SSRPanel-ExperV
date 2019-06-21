@@ -6,8 +6,8 @@ A set of achievement about freedom and blood.
 Install the panel  
 Enable **curl、gd、fileinfo、openssl** components  
 Enable all functions which **start with 'proc_'** (from 'disable_function' configuration)  
-Establish a new website, set relevant configuration(floder)
-Add rewirte rules of 'Laravel'   
+Establish a new website, set relevant configuration(floder)  
+Add rewrite rules of 'Laravel'   
 ```
 location / {
     try_files $uri $uri/ /index.php$is_args$args;
