@@ -1,5 +1,5 @@
 # SSRPanel
-A roect about freedom and blood.
+A set of achievement about freedom and blood.
 
 ## Installtion Tutorial
 #### 1.bt.cn
@@ -13,6 +13,7 @@ location / {
     try_files $uri $uri/ /index.php$is_args$args;
 }
 ```
+
 #### 2.Git clone
 ```
 cd ssrpanel/
@@ -21,11 +22,14 @@ php artisan key:generate
 chown -R www:www storage/
 chmod -R 777 storage/
 ```
+
 #### 3.Database initialization
 Establish a database in 'utf8mb4'
 Import the sql file from 'sql' folder
+
 #### 4.Modify the core configuration file of ssrpanel
-database app(disable debug) mail
+database/app(disable debug)/mail
+
 #### 5.Add timed task via crontab
 use the same role as ssrpanel
 ```
