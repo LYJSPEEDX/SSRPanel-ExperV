@@ -15,6 +15,7 @@ location / {
 ```
 
 #### 2.Git clone
+FIRST set the database connection in .env file in the root directory of the project(if not exists, rename .env.example)
 ```
 cd ssrpanel/
 php composer.phar install
@@ -36,3 +37,5 @@ use the same role as ssrpanel
 crontab -e -u www
 * * * * * php /home/wwwroot/ssrpanel/artisan schedule:run >> /dev/null 2>&1
 ```
+
+#### Everything should work smoothly and safe
