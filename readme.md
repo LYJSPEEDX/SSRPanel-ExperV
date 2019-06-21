@@ -50,5 +50,5 @@ sh queue.sh
 #### logo/home_logo
 ~/public/assets/images/
 #### footer
-~/resources/views/user/layouts.blade.php
+~/resources/views/user/layouts.blade.php  
 ~/resources/views/admin/layouts.blade.php
