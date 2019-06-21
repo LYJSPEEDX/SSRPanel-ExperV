@@ -41,7 +41,7 @@ use the same role as ssrpanel
 crontab -e -u www
 * * * * * php /home/wwwroot/ssrpanel/artisan schedule:run >> /dev/null 2>&1
 
-php artisan queue:work
+sh queue.sh
 ```
 
 #### Everything should work smoothly and safe
