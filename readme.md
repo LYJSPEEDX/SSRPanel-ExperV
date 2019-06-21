@@ -45,3 +45,10 @@ sh queue.sh
 ```
 
 #### Everything should work smoothly and safe
+
+## Q&A:Modify imgages and other assets
+#### logo/home_logo
+~/public/assets/images/
+#### footer
+~/resources/views/user/layouts.blade.php
+~/resources/views/admin/layouts.blade.php
