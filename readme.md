@@ -14,8 +14,19 @@ location / {
 }
 ```
 
-#### 2.Git clone
-FIRST set the database connection in .env file in the root directory of the project(if not exists, rename .env.example)
+#### 2.Git clone and necessary configuration
+Set everything absolutely correctly in .env file in root directory(rename from .env.example)   
+**After modification, excute following codes**
+```
+php artisan cache:clear 
+php artisan config:clear
+```
+
+#### 3.Database initialization
+Establish a database in 'utf8mb4'  
+Import the sql file from 'sql' folder  
+
+#### 4.Process installtion
 ```
 cd ssrpanel/
 php composer.phar install
@@ -24,18 +35,13 @@ chown -R www:www storage/
 chmod -R 777 storage/
 ```
 
-#### 3.Database initialization
-Establish a database in 'utf8mb4'  
-Import the sql file from 'sql' folder  
-
-#### 4.Modify the core configuration file of ssrpanel
-database/app(disable debug)/mail
-
-#### 5.Add timed task via crontab
+#### 5.Add timed task via crontab and run queue
 use the same role as ssrpanel
 ```
 crontab -e -u www
 * * * * * php /home/wwwroot/ssrpanel/artisan schedule:run >> /dev/null 2>&1
+
+php artisan queue:work
 ```
 
 #### Everything should work smoothly and safe
